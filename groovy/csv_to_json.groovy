@@ -8,7 +8,7 @@ def dataList = []
 def lineCounter = 0
 def headers = []
 
-new File("C://Users//nlshr//Downloads//Balance Sheet_669_1_worksheet.csv").eachLine(){ line ->
+new File("C://Users//nlshr//Downloads//test.csv").eachLine(){ line ->
 if (lineCounter == 0) {
 
 	headers = line.toString().split(",").collect{it.trim()}
